@@ -1,1 +1,8 @@
 @boot
+load info_collection
+load check from sys_checker
+load OS from sys_checker
+
+if platform.machine == ("x86")
+    create_new file_type (".satif")
+    check 
